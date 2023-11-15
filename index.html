@@ -4,29 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Web Portofolio</title>
-    <link href="dist/css/final.css" rel="stylesheet" />
+    <title>Portofolio | Nabilkwn</title>
+    <link rel="shortcut icon" href="dist/img/logo.png" type="png" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.remove("dark");
       }
     </script>
   </head>
   <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary">nabilkwn</a>
+          <div class="flex items-center px-4">
+            <img src="dist/img/logo.png" alt="logo" class="mr-2 h-10 w-10" />
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >Nabilkwn</a
+            >
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
             </button>
 
             <nav
@@ -35,33 +57,84 @@
             >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Home</a>
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Home</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About Me</a>
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >About Me</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                  <a
+                    href="#Web"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Web</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Partner</a>
+                  <a
+                    href="#tech"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Technology</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+                  <a
+                    href="#desaign"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Desaign</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#certificate"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Certificate</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Contact</a
+                  >
                 </li>
                 <li class="mt-3 flex items-center pl-8 lg:mt-0">
                   <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <span class="mr-2 text-sm text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="#059669" d="M256 104c-83.813 0-152 68.187-152 152s68.187 152 152 152s152-68.187 152-152s-68.187-152-152-152Zm0 272a120 120 0 1 1 120-120a120.136 120.136 0 0 1-120 120ZM240 16h32v48h-32zm0 432h32v48h-32zm208-208h48v32h-48zm-432 0h48v32H16zm372.687 171.314l22.627-22.627l32 32l-22.627 22.627zm-320-320l22.628-22.628l32 32l-22.628 22.628zm-.002 329.375l32-32l22.628 22.626l-32 32zm320.002-320.003l32-32l22.628 22.628l-32 32z"/></svg></span>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
                       </div>
                     </label>
-                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                    <span class="ml-2 text-sm text-slate-500"></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="20"
+                      height="20"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="#059669"
+                        d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29c0-1.167.242-2.278.681-3.286z"
+                      />
+                    </svg>
+                  </span>
                   </div>
                 </li>
               </ul>
@@ -77,19 +150,54 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Hello Everyone 👋, Im <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Nabil Kurniawan</span></h1>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Full Stack Web Developer | <span class="text-dark dark:text-white">Digital Administrator</span></h2>
-            <p class="mb-10 font-medium leading-relaxed text-secondary">I Am a Programmer in the field of Front-End and Back-End Web Developer. <span class="font-bold text-dark dark:text-white">And also a Digital Administrator at Simgroup Corporate.</span></p>
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hello Everyone 👋, Im
+              <span
+                class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                >Nabil Kurniawan</span
+              >
+            </h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">
+              Web Desaigner |
+              <span class="text-dark dark:text-white">Graphic Desaign</span>
+            </h2>
+            <p
+              class="mb-10 animate-pulse font-medium leading-relaxed text-secondary"
+            >
+              I Am a Programmer And Graphic Desaigner Open To Work
+              <span class="font-bold text-dark dark:text-white"
+                >And also a Intern Digital Administrator at Simgroup
+                Corporate.</span
+              >
+            </p>
 
-            <a href="https://wa.me/0895618081674" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Contact Me</a>
+            <a
+              href="https://drive.google.com/file/d/1RUe3Ntgs2hXQqDKoKF6okT-UcHE1i7W-/view?usp=sharing"
+              class="rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              >My Resume</a
+            >
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-0 lg:mt-9">
-              <img src="dist/img/nabilbg.png" alt="Sandhika Galih" class="relative z-10 mx-auto max-w-full" />
-              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
-                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <img
+                src="dist/img/nabilbg.png"
+                alt="Sandhika Galih"
+                class="relative z-10 mx-auto max-w-full"
+              />
+              <span
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
-                    fill="#14b8a6"
+                    fill="#059669"
                     d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z"
                     transform="translate(100 100) scale(1.1)"
                   />
@@ -103,41 +211,49 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <section id="about" class="pb-32 pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="mb-3 text-lg font-bold uppercase text-primary">About Me</h4>
-            <h2 class="mb-5 max-w-md text-2xl font-bold text-dark dark:text-white lg:text-3xl">Vocational high school graduate majoring in software engineering</h2>
-            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Being a programmer is certainly not easy. there are many things to learn from basic to expert. but, that doesn't stop me from learning it!</p>
+          <div class="mb-10 w-full px-4 lg:w-1/2" data-aos="fade-right">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">
+              About Me
+            </h4>
+            <h2
+              class="mb-5 max-w-md text-2xl font-bold text-dark dark:text-white lg:text-3xl"
+            >
+              Vocational high school graduate majoring in software engineering
+            </h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg animate-pulse">
+              Being a programmer is certainly not easy. there are many things to
+              learn from basic to expert. but, that doesn't stop me from
+              learning it!
+            </p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Let's be friend</h3>
-            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
-              The proverb says don't know then don't love. therefore let's make friends to add relationships 
+          <div class="w-full px-4 lg:w-1/2" data-aos="fade-right">
+            <h3
+              class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl"
+            >
+              Let's be friend
+            </h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg animate-pulse">
+              The proverb says don't know then don't love. therefore let's make
+              friends to add relationships
             </p>
             <div class="flex items-center">
-              <!-- Youtube -->
-              <a
-                href="https://youtube.com/@nkstarzx"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>YouTube</title>
-                  <path
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  />
-                </svg>
-              </a>
 
               <!-- Instagram -->
               <a
                 href="https://instagram.com/nabilkwn"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full  border border-primary text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <title>Instagram</title>
                   <path
                     d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
@@ -145,13 +261,39 @@
                 </svg>
               </a>
 
+              <!-- LinkedIn -->
+              <a
+                href="https://linkedin.com/in/nabil-kurniawan"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full  border border-primary text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+                          
               <!-- facebook -->
               <a
                 href="https://facebook.com/nabil.kurniawan.505523"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full  border border-primary text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <title>Facebook</title>
                   <path
                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
@@ -163,9 +305,15 @@
               <a
                 href="https://t.me/nabilkwn"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full  border border-primary text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <title>Telegram</title>
                   <path
                     d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
@@ -173,19 +321,26 @@
                 </svg>
               </a>
 
-              <!-- LinkedIn -->
+              <!-- Youtube -->
               <a
-                href="https://linkedin.com/in/nabil-kurniawan"
+                href="https://youtube.com/@nkstarzx"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full  border border-primary text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>LinkedIn</title>
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
                   <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
                   />
                 </svg>
               </a>
+
             </div>
           </div>
         </div>
@@ -193,164 +348,493 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+    <!-- Web Section Start -->
+    <section id="Web" class="bg-emerald-100 pb-16 pt-36 dark:bg-slate-800">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4 " data-aos="fade-down">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">New Project</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">
-              The following are some of the projects I made to improve my skills, including
+            <h4 class="mb-2 text-lg font-semibold text-primary">Web Developer</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              New Project
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg animate-pulse">
+              The following are some of the projects I made to improve my
+              skills, including
             </p>
           </div>
         </div>
 
-        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12" 
+        >
+          <div class="mb-12 p-4 md:w-1/2" data-aos="flip-down">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/w10.png" alt="Landing Page" width="w-full" />
+              <img
+                src="dist/img/portfolio/w10.png"
+                alt="Landing Page"
+                width="w-full"
+              />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Website For Ideas</h3>
-            <p class="text-base font-medium text-secondary">Here we can look for ideas that we can work on and add insights.</p>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Weather App
+            </h3>
+            <p class="text-base font-medium text-secondary animate-pulse">
+              An app to check the weather and temperature in your area
+            </p>
+            <a href="https://havingfun-weather-app.netlify.app/">
+              <button class="w-[150px] mt-5 h-[50px] dark:text-white border dark:border-white text-white hover:border-primary bg-primary hover:text-dark border-slate-800 rounded-full">See More</button>    
+            </a>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="flip-down">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/w11.png" alt="E-Commerce" width="w-full" />
+              <img
+                src="dist/img/portfolio/w11.png"
+                alt="E-Commerce"
+                width="w-full"
+              />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Travel Tours</h3>
-            <p class="text-base font-medium text-secondary">a website to view places and book travel tickets for vacations.</p>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Landing Page
+            </h3>
+            <p class="text-base font-medium text-secondary animate-pulse">
+              Original landing page project real for UMKM
+            </p>
+            <a href="https://sahabatkita.netlify.app">
+              <button class="w-[150px] mt-5 h-[50px] dark:text-white border dark:border-white text-white hover:border-primary bg-primary hover:text-dark border-slate-800 rounded-full">See More</button>    
+            </a>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="flip-down">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/w12.png" alt="Technical Documentation" width="w-full" />
+              <img
+                src="dist/img/portfolio/w12.png"
+                alt="Technical Documentation"
+                width="w-full"
+              />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Coffe Shop</h3>
-            <p class="text-base font-medium text-secondary">a coffee shop application and can view the coffee menu and order cup a coffee.</p>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Cloning Epic Store
+            </h3>
+            <p class="text-base font-medium text-secondary animate-pulse">
+              Epic games store clone that is only a Front-End
+            </p>
+            <a href="https://epicgames-hd21.netlify.app/">
+              <button class="w-[150px] mt-5 h-[50px] dark:text-white border dark:border-white text-white hover:border-primary bg-primary hover:text-dark border-slate-800 rounded-full">See More</button>    
+            </a>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="flip-down">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/w13.png" alt="Tribute Page" width="w-full" />
+              <img
+                src="dist/img/portfolio/w13.png"
+                alt="Tribute Page"
+                width="w-full"
+              />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce</h3>
-            <p class="text-base font-medium text-secondary">an online smartphone sales store that can view specifications and make orders.</p>
+            <h3
+              class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white"
+            >
+              Webhost API
+            </h3>
+            <p class="text-base font-medium text-secondary animate-pulse">
+              An App intermediary API to take hosting services
+            </p>
+            <a href="https://ebook-apps.000webhostapp.com/">
+              <button class="w-[150px] mt-5 h-[50px] dark:text-white border dark:border-white text-white hover:border-primary bg-primary hover:text-dark border-slate-800 rounded-full">See More</button>    
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- Portfolio Section End -->
+    <!-- Web Section End -->
 
-    <!-- Clients Section Start -->
-    <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+    <!-- Tech Section Start -->
+    <section id="tech" class="bg-teal-950 pb-32 pt-36 dark:bg-slate-300" >
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
           <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Partner</h4>
-            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Who Have Cooperated</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">several companies and startups where I have developed skills and worked.</p>
+            <h4 class="mb-2 text-lg font-semibold text-primary">Technology</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl"
+            >
+              The Tech Stack Use
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg animate-pulse">
+              Some of the software we use where we have developed skills and work
+            </p>
           </div>
         </div>
 
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
           <div class="flex flex-wrap items-center justify-center">
-            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/simgroup.png" alt="Google" />
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/tech/matriks.png" alt="Google" />
             </a>
-            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/eduwork.png" alt="Gojek" />
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/tech/React.webp" alt="Gojek" />
             </a>
-            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/dicoding.png" alt="Tokopedia" />
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/tech/bootstrap.png" alt="Tokopedia" />
             </a>
-            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/myskill.png" alt="traveloka" />
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/tech/potoshop.png" alt="traveloka" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/tech/tailwind.png" alt="traveloka" />
             </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- Clients Section End -->
+    <!-- Tech Section End -->
 
-    <!-- Blog Section Start -->
-    <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+    <!-- Desaign Section Start -->
+    <section id="desaign" class="bg-emerald-100 pb-32 pt-36 dark:bg-dark">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Recent Posts</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Parts of my work and my blog that are widely distributed on the internet</p>
+            <h4 class="mb-2 text-lg font-semibold text-primary">Desaign Graphic</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              My Desaign Portofolio
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg animate-pulse">
+              Projects that I created as a Design Freelancer at Photoshop
+            </p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-              <img src="https://source.unsplash.com/360x200?laravel" alt="Programming" class="w-full" />
-              <div class="py-8 px-6">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800" data-aos="zoom-out"
+            >
+              <img
+                src="dist/img/desaign/risma.jpg"
+                alt="risma"
+                class="w-full"
+              />
+              <div class="px-6 py-8">
                 <h3>
-                  <a href="https://drive.google.com/file/d/15nYjm7fBxy2ikLiYJ7YIGZ7Uz0Z4v1jR/view?usp=sharing" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">How to install Laravel</a>
+                  <a
+                    href="https://www.instagram.com/rismabaitulhamdi/"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    >Risma Baitul Hamdi</a
+                  >
                 </h3>
-                <p class="mb-6 text-base font-medium text-secondary">The following is how to install Laravel for beginners on windows.</p>
-                <a href="https://drive.google.com/file/d/15nYjm7fBxy2ikLiYJ7YIGZ7Uz0Z4v1jR/view?usp=sharing" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Read More</a>
+                <p class="mb-6 text-base font-medium text-secondary animate-pulse">
+                  Design Project for Risma Baitul Hamdi Organization
+                </p>
+                <a
+                  href="https://www.instagram.com/rismabaitulhamdi/"
+                  class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:opacity-80"
+                  >Let's See</a
+                >
               </div>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-              <img src="https://source.unsplash.com/360x200?Logarithm" alt="Mechanical Keyboard" class="w-full" />
-              <div class="py-8 px-6">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800" data-aos="zoom-out"
+            >
+              <img
+                src="dist/img/desaign/kalamansi.jpg"
+                alt="kalamansi
+                class="w-full"
+              />
+              <div class="px-6 py-8">
                 <h3>
-                  <a href="https://www.scribd.com/document/503422989/Logaritma-Tugas-Nabil-Kurniawan" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Logarithm example problemo</a>
+                  <a
+                    href="https://www.instagram.com/sahabat_kita.id/"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    >UKM Sahabat Kita</a
+                  >
                 </h3>
-                <p class="mb-6 text-base font-medium text-secondary">Here is an example of a logarithm problem that I made to be an example problem.</p>
-                <a href="https://www.scribd.com/document/503422989/Logaritma-Tugas-Nabil-Kurniawan" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Read More</a>
+                <p class="mb-6 text-base font-medium text-secondary animate-pulse">
+                  Product Design for Emerging and Developing UMKM
+                </p>
+                <a
+                  href="https://www.instagram.com/sahabat_kita.id/"
+                  class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:opacity-80"
+                  >Let's See</a
+                >
               </div>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-              <img src="https://source.unsplash.com/360x200?javascript" alt="Coffee" class="w-full" />
-              <div class="py-8 px-6">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800" data-aos="zoom-out"
+            >
+              <img
+                src="dist/img/desaign/yayasan.jpg"
+                alt="yayasan"
+                class="w-full"
+              />
+              <div class="px-6 py-8">
                 <h3>
-                  <a href="https://www.youtube.com/watch?v=M7zl77bORqw&t=39s" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Use VueJs Cli</a>
+                  <a
+                    href="https://www.instagram.com/generasirabbani_bengkulu/"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    >Rabbani Fundation</a
+                  >
                 </h3>
-                <p class="mb-6 text-base font-medium text-secondary">I explain how to use vuejs using vue cli in the form of a video.</p>
-                <a href="https://www.youtube.com/watch?v=M7zl77bORqw&t=39s" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Read More</a>
+                <p class="mb-6 text-base font-medium text-secondary animate-pulse">
+                  Frelance Project from Rabbani Generation Foundation for instagram feeds
+                </p>
+                <a
+                  href="https://www.instagram.com/generasirabbani_bengkulu/"
+                  class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:opacity-80"
+                  >Let's See</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Blog Section End -->
+    <!-- Desaign Section End -->
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+    <!-- Sertificate section start -->
+    <section id="certificate" class="bg-teal-950 pb-32 pt-36 px-12 dark:bg-slate-300">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Send Message</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Send me a message, critics and suggestions and it will be sent directly to my email.</p>
+            <h4 class="mb-2 text-lg font-semibold text-primary">Certification</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl"
+            >
+              My Cerftificate
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg animate-pulse">
+              The Best Certificates I got include
+            </p>
           </div>
         </div>
 
-        <form id="contact-form" action="https://formspree.io/f/xdorebov" method="POST">
-          <div class="w-full lg:mx-auto lg:w-2/3">
+      <div class="">
+          <div class="flex flex-wrap lg:mx-40">
+              <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 md:grid-cols-3">
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/alibaba.jpg')" data-aos="zoom-in-right">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/alibaba.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Certified Developer Internasional Alibaba Cloud</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/garuda.jpg')" data-aos="zoom-in-left">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/garuda.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Certificate of Competence BNSP Software Engineering</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/indoboot.jpg')" data-aos="zoom-in-right">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/indoboot.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Introduction Web Developer Indoboot Academy</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/revou.jpg')"data-aos="zoom-in-left">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/revou.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Intro To Software Engineer RevoU</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/pkn.jpg')"data-aos="zoom-in-right">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/pkn.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Pekan Karir Nasional UNP</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/tahfiz.jpg')"data-aos="zoom-in-left">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/tahfiz.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Certificate Qur'an Juz 30</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/bnn.jpg')"data-aos="zoom-in-right">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/bnn.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Certificate Remaja Teman Sebaya BNN</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/eduwork.jpg')"data-aos="zoom-in-left">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/eduwork.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Certificate Eduwork Rest API With JWT</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/dicoding1.jpg')" data-aos="zoom-in-right">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/dicoding1.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Study Front-End With Dicoding</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/dicoding2.jpg')" data-aos="zoom-in-left">
+                      <a href="#certificate" data-aos="zoom-in-left">
+                          <img class="rounded-t-lg" src="dist/img/certificate/dicoding2.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Programming Logic 101 With Dicoding</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/excel1.jpg')" data-aos="zoom-in-right">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/excel1.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Data Formatting Microsoft Excel MySkill</h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg dark:bg-slate-800" onclick="showModal('dist/img/certificate/excel2.jpg')" data-aos="zoom-in-left">
+                      <a href="#certificate">
+                          <img class="rounded-t-lg" src="dist/img/certificate/excel2.jpg" alt="" />
+                      </a>
+                      <div class="p-5">
+                          <a href="#certificate">
+                              <h5 class="text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white">Data Visualitazion Microsoft Excel MySkill</h5>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Sertificate section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pb-32 pt-36 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center" data-aos="fade-down">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              Send Message
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg animate-pulse">
+              Send me a message, critics and suggestions and it will be sent
+              directly to my email
+            </p>
+          </div>
+        </div>
+
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xdorebov"
+          method="POST"
+        >
+          <div class="w-full lg:mx-auto lg:w-2/3" data-aos="flip-right">
             <div class="mb-8 w-full px-4">
-              <label for="name" class="text-base font-bold text-primary">Name</label>
-              <input type="text" id="name" name="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+              <label for="name" class="text-base font-bold text-primary"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
             </div>
             <div class="mb-8 w-full px-4">
-              <label for="email" name="email" class="text-base font-bold text-primary">Email</label>
-              <input type="email" id="email" name="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+              <label
+                for="email"
+                name="email"
+                class="text-base font-bold text-primary"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
             </div>
             <div class="mb-8 w-full px-4">
-              <label for="message" name="message" class="text-base font-bold text-primary">Message</label>
-              <textarea type="text" id="message" name="message" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+              <label
+                for="message"
+                name="message"
+                class="text-base font-bold text-primary"
+                >Message</label
+              >
+              <textarea
+                type="text"
+                id="message"
+                name="message"
+                class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              ></textarea>
             </div>
             <div type="submit" class="w-full px-4">
-              <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Send</button>
+              <button
+                class="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
+              >
+                Send
+              </button>
             </div>
           </div>
         </form>
@@ -359,78 +843,118 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-12">
+    <footer class="bg-emerald-950 pb-12 pt-24 dark:bg-slate-950">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-white">NK</h2>
-            <h3 class="mb-2 text-2xl font-bold">Contact Us</h3>
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h2 class="mb-5 text-4xl font-bold text-white">Nabilkwn</h2>
+            <h3 class="mb-2 text-2xl font-bold">My Address</h3>
             <p>nabilkurniawan6908@gmail.com</p>
             <p>Jl. Andalas No 36A Padang City</p>
             <p>West Sumatra</p>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">Blog Category</h3>
+          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h3 class="mb-5 text-xl font-semibold text-white">Field of Work</h3>
             <ul class="text-slate-300">
               <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Programming</a>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Web Developer</a
+                >
               </li>
               <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Technology</a>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Graphic Desaigner</a>
+                
               </li>
               <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Tutorial</a>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Digital Administrator</a> 
               </li>
             </ul>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">Link</h3>
-            <ul class="text-slate-300">
+          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h3 class="mb-5 text-xl font-semibold text-white">Navigation</h3>
+            <ul class="text-slate-300 animate-pulse">
               <li>
-                <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Home</a>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="#about" class="mb-3 inline-block text-base hover:text-primary">About Me</a>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >About Me</a
+                >
               </li>
               <li>
-                <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">Portfolio</a>
+                <a
+                  href="#Web"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Web</a
+                >
               </li>
               <li>
-                <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Partner</a>
+                <a
+                  href="#tech"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Technology</a
+                >
               </li>
               <li>
-                <a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
+                <a
+                  href="#desaign"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Desaign</a
+                >
               </li>
               <li>
-                <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a>
+                <a
+                  href="#certificate"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Certificate</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
         </div>
 
         <div class="w-full border-t border-slate-700 pt-10">
-          <div class="mb-5 flex items-center justify-center">
-            <!-- Youtube -->
-            <a
-              href="https://youtube.com/@nkstarzx"
-              target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <title>YouTube</title>
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                />
-              </svg>
-            </a>
-
+          <div class="mb-5 flex items-center justify-center" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            
             <!-- Instagram -->
             <a
               href="https://instagram.com/nabilkwn"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
-              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <title>Instagram</title>
                 <path
                   d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
@@ -440,32 +964,43 @@
 
             <!-- facebook -->
             <a
-            href="https://facebook.com/nabil.kurniawan.505523"
-            target="_blank"
-            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-          >
-            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Facebook</title>
-              <path
-                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-              />
-            </svg>
-          </a>
+              href="https://facebook.com/nabil.kurniawan.505523"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
 
-             <!-- Telegram -->
-             <a
-             href="https://t.me/nabilkwn"
-             target="_blank"
-             class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-           >
-             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-               <title>Telegram</title>
-               <path
-                 d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
-               />
-             </svg>
-           </a>
-
+            <!-- Telegram -->
+            <a
+              href="https://t.me/nabilkwn"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Telegram</title>
+                <path
+                  d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                />
+              </svg>
+            </a>
 
             <!-- LinkedIn -->
             <a
@@ -473,17 +1008,55 @@
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
-              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <title>LinkedIn</title>
                 <path
                   d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
                 />
               </svg>
             </a>
+
+            <!-- Youtube -->
+            <a
+              href="https://youtube.com/@nkstarzx"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
           </div>
           <p class="text-center text-xs font-medium text-slate-500">
-            Create By <a href="https://instagram.com/sandhikagalih" target="_blank" class="font-bold text-primary">Nabil Kurniawan</a> copyright
-            <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">2023</a>.
+            Create By
+            <a
+              href="https://linkedin.com/in/nabilkurniawan"
+              target="_blank"
+              class="font-bold text-primary"
+              >Nabil Kurniawan</a
+            >
+            copyright
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              class="font-bold text-teal-500"
+              >2023</a
+            >.
           </p>
         </div>
       </div>
@@ -491,11 +1064,29 @@
     <!-- Footer End -->
 
     <!-- Back to top Start -->
-    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
-      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 animate-bounce items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span>
     </a>
     <!-- Back to top End -->
 
+    <!-- Modal Image Start -->
+    <div id="modal" class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center backdrop-blur-sm">
+      <!-- The close button -->
+      <a class="fixed z-90 top-24 right-8 text-white text-5xl font-bold hover:text-secondary" href="javascript:void(0)" onclick="closeModal()">&times;</a>
+
+      <!-- A big image will be displayed here -->
+      <img id="modal-img" class="object-cover transition duration-300 ease-in-out" height="1728px" width="972px" />
+    </div>
+    <!-- Modal Image End -->
+
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
